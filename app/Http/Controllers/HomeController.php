@@ -616,7 +616,7 @@ class HomeController extends Controller
 
       foreach ($category as $k) {
 
-        for($s = 0; $s < count($cat_id); $s++ ){
+        for($s = 0; $s < count(array($cat_id)); $s++ ){
 
           if($k->id == $cat_id[$s]){
             $k->option = 1;
